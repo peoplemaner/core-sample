@@ -2,8 +2,8 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { Company } from './entities/company.entity';
-import { CompaniesService } from './company.service';
-import { CompaniesController } from './company.controller';
+import { CompaniesService } from './companies.service';
+import { CompaniesController } from './companies.controller';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Company])],
@@ -11,4 +11,4 @@ import { CompaniesController } from './company.controller';
   exports: [CompaniesService],
   controllers: [CompaniesController],
 })
-export class CompanyModule {}
+export class CompaniesModule {}

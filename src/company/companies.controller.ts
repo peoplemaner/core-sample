@@ -2,7 +2,7 @@ import { Controller } from '@nestjs/common';
 import { Crud, CrudController } from '@nestjsx/crud';
 
 import { Company } from './entities/company.entity';
-import { CompaniesService } from './company.service';
+import { CompaniesService } from './companies.service';
 
 @Crud({
   model: {

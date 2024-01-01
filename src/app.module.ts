@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { CompanyModule } from './company/company.module';
+import { CompaniesModule } from './company/companies.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
@@ -24,7 +24,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         };
       },
     }),
-    CompanyModule,
+    CompaniesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
